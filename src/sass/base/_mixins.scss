@@ -17,15 +17,16 @@
     }
 }
 
+@mixin mobile-m {
+    @media(max-width: 460px) {
+        @content;
+    }
+}
+
 @mixin mobile-s {
     @media(max-width: 400px) {
         @content;
     }
 }
 
-@mixin mobile-m {
-    @media(max-width: 460px) {
-        @content;
-    }
-}
 
