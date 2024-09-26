@@ -1,0 +1,57 @@
+.advantages {
+    background: #f6f6f6;
+    min-height: 473px;
+
+    &__title {
+        padding-top: 73px;
+        font-weight: 700;
+        font-size: clamp(22px, 1.133rem + 1.21vw, 30px);
+        text-align: center;
+        color: #0d0d0d;
+        &-mini {
+            padding-top: 40px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            color: #0d0d0d;
+        }
+    }
+
+    &__wrapper {
+        padding: 60px 10px 60px 45px;
+        display: flex;
+        justify-content: center;
+        gap: 88px;
+
+        @include laptop() {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 0fr));
+            gap: 20px;
+        }
+    }
+
+    &__icons {
+        width: 253px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__text {
+        min-width: 271px;
+        padding-top: 20px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        color: #0d0d0d;
+        &-red {
+            color: #FF0000;
+        }
+    }
+}
+
+
+
+
+

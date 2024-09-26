@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile() {
+        gap: 100px;
+    }
+
+    @include mobile-s() {
+        gap: 25px;
+    }
+
+    &__logo {
+        width: 250px;
+        img {
+            width: 100%;
+        }
+
+        @include mobile() {
+            width: 180px;
+        }
+    }
+
+    &__official {
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        color: #fff;
+        span {
+            display: block;
+            font-size: 18px;
+        }
+    }
+
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: right;
+        color: #fff;
+        text-decoration: none;
+
+        @include mobile() {
+            display: none;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
