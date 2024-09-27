@@ -29,4 +29,10 @@
     }
 }
 
+@mixin mobile-xs {
+    @media(max-width: 360px) {
+        @content;
+    }
+}
+
 

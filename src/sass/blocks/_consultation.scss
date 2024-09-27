@@ -2,9 +2,23 @@
     min-height: 680px;
     padding: 100px 0 92px 0;
     background: url('../../img/consult/bg2.png') center (center/cover) no-repeat;
+
+    @include laptop() {
+        padding: 100px 0 92px 30px;
+    }
+
+    @include mobile-xs() {
+        padding-right: clamp(0.625rem, 0.019rem + 3.03vw, 1.875rem);
+        padding-left: clamp(0.625rem, 0.019rem + 3.03vw, 1.875rem);
+    }
+
     &__desr {
         font-weight: 500;
         font-size: 20px;
         color: #fff;
+
+        @include laptop() {
+            font-size: clamp(15px, 0.786rem + 0.758vw, 20px);
+        }
     }
 }

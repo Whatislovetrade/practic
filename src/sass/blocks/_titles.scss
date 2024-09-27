@@ -9,4 +9,8 @@
         color: #fff;
         text-align: left;
     }
+
+    @include laptop() {
+        font-size: clamp(19px, 0.672rem + 2.576vw, 36px);;
+    }
 }
