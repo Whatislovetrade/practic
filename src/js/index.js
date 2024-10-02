@@ -13,7 +13,8 @@ $(document).ready(function(){
                   breakpoint: 992,
                   settings: {
                     infinite: true,
-                    dots: false
+                    dots: false,
+                    arrows: false,
                   }
                 },
               ]
