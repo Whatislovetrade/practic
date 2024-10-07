@@ -1,0 +1,32 @@
+.slider {
+    display: block;
+    padding: 81px 0 81px 0;
+    min-height: 650px;
+
+    .slider__content {
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .btn {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-10%);
+        border: none;
+        background-color: #fff;
+
+        @media(max-width: 1100px) {
+            display: none;
+        }
+    }
+
+    .nextBtn {
+        right: -66px;
+    }
+
+    .prevBtn {
+        left: -66px
+    }
+}
+
+
