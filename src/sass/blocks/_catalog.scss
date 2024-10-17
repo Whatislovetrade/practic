@@ -41,9 +41,12 @@
 
     &__content {
         margin-top: 60px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
 
     &-item {
@@ -142,12 +145,10 @@
             padding-left: 19px;
             margin-bottom: 0px;
             list-style-type: none;
-
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
-
             li {
                 position: relative;
                 font-weight: 300;
