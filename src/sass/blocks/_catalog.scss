@@ -8,14 +8,17 @@
         align-items: center;
         margin-bottom: 0;
         padding-left: 0;
+        @include tablet-catalog() {
+            padding: 0 10px 0 10px;
+        }
     }
     &__tab {
-        width: 220px;
+        width: clamp(86px, 0.164rem + 29.78vw, 220px);
         height: 50px;
         border: 2px solid #d0d0d0;
 
         font-weight: 400;
-        font-size: 18px;
+        font-size: clamp(9px, 0.314rem + 1.78vw, 18px);
         line-height: 48px;
         text-transform: uppercase;
         text-align: center;
@@ -46,6 +49,11 @@
         flex-wrap: wrap;
         &_active {
             display: flex;
+        }
+
+        @include laptop() {
+            justify-content: center;
+            gap: 10px;
         }
     }
 
@@ -183,5 +191,15 @@
                 color: #c70101;
             }
         }
+    }
+}
+
+.text-320 {
+    @include mobile-s() {
+        height: 48px;
+        width: 92px;
+        display: inline-block;
+        text-wrap: nowrap;
+        font-size: 9px;
     }
 }
