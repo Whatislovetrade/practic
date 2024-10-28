@@ -60,6 +60,40 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('slow')
     })
   })
+
+  //Validate
+  function validateForm(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        phone: 'required',
+        email: {
+          required: true,
+          email: true
+        },
+        messages: {
+          name: {
+            required: "Пожалуйста введите свое имя",
+            minlength: jQuery.validator.format("Введите {0} символов!")
+          },
+          phone: 'Пожалуйста введите свой номер телефона',
+          email: {
+            required: "Пожалуйста введите свою почту",
+            email: "Неправильно введен адрес почты"
+          }
+        }
+      }
+    })
+  }
+
+  validateForm('#consultation form')
+  validateForm('#consultation-form')
+  validateForm('#order form')
 });
+
+
 
 
