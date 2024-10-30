@@ -141,6 +141,8 @@ validateForms('#order form');
       });
     } // End if
   });
+
+  new WOW().init();
 });
 
 

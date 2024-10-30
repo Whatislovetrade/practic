@@ -4,11 +4,14 @@
     &__content {
         margin-top: 60px;
         padding: 0 20px 0 20px;
+
     }
 
     &__block {
         display: flex;
         gap: 61px;
+        animation: fadeInUp;
+        animation-duration: 2s;
         @include tablet() {
             display: flex;
             gap: 61px;
