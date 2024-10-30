@@ -18,3 +18,9 @@ Thumbs.db
 # IDE project settings
 .vscode/
 .idea/
+
+# OSP
+
+.osp
+.php
+mailer
