@@ -22,5 +22,5 @@ Thumbs.db
 # OSP
 
 .osp
-.php
-mailer
+smart.php
+phpmailer
